@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+      body{
+        background-color:rgb(97, 95, 95);
+        text-align: center;
+        background-image: url("https://wallpaperaccess.com/full/6383327.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      h1{
+        width: 250px;
+        color: black;
+        background-color: rgb(230, 230, 220);
+        display: inline-block;
+        border-radius:5px;
+      }
+ 
+button {
+    width: 100px;
+    height: 30px;
+    background-color: #202020;
+    color: white;
+    border-radius: 6px;
+    border: 2px solid #fff;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+button:hover {
+    background-color: #fff;
+    color: #202020;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>STOP WATCH</h1>
+    </div>
+    <div>
+        <h1 id="hour">0</h1>
+        <h1 id="min">0</h1>
+        <h1 id="sec">0</h1>v
+        <h1 id="msec">0</h1>
+    </div>
+
+    <div>
+        <button id="start-btn" onclick="start()">Start</button>
+        <button onclick="pause()">Pause</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
